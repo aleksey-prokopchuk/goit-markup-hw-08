@@ -1,124 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-</head>
-<body>
-        <!-- Шапка сайта -->
-        <header>
-            <nav>
-                <a href=""><span>Web</span>Studio</a>
-                <ul>
-                    <li>
-                        <a href="./index.html">Студия</a>
-                    </li>
-                    <li>
-                        <a href="">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </header>
-
-        <!-- Основной контент Портфолио -->
-        <main>
-            <!-- Герой -->
-            <section>
-                <h2 hidden>Портфолио</h2>
-
-                <!-- Фиьтри примеров работ -->
-                <ul>
-                    <li>
-                        <button type="button">Все</button>
-                    </li>
-                    <li>
-                        <button type="button">Веб-сайты</button>
-                    </li>
-                    <li>
-                        <button type="button">Приложения</button>
-                    </li>
-                    <li>
-                        <button type="button">Дизайн</button>
-                    </li>
-                    <li>
-                        <button type="button">Маркетинг</button>
-                    </li>
-                </ul>
-
-                <!-- Список примеров работ -->
-                <ul>
-                    <li>
-                        <img src="./images/portfolio/tehnokryak.jpg" alt="Пример работы Технокряк" width="370" height="294">
-                        <h3>Технокряк</h3>
-                        <p>Веб-сайт</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/new-orlean.jpg" alt="Пример работы постер New Orlean vs Golden Star" width="370" height="294">
-                        <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                        <p>Дизайн</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/seafood.jpg" alt="Пример работы ресторан Seafood" width="370" height="294">
-                        <h3>Ресторан <span lang="en">Seafood</span></h3>
-                        <p>Приложение</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/project-prime.jpg" alt="Пример работы проект Prime" width="370" height="294">
-                        <h3>Проект <span lang="en">Prime</span></h3>
-                        <p>Маркетинг</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/project-boxes.jpg" alt="Пример работы проект Boxes" width="370" height="294">
-                        <h3>Проект <span lang="en">Boxes</span></h3>
-                        <p>Приложение</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/inspiration-no-borders.jpg" alt="Пример работы Inspiration has no Borders" width="370" height="294">
-                        <h3 lang="en">Inspiration has no Borders</h3>
-                        <p>Веб-сайт</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/limited-edition.jpg" alt="Пример работы издание Limited Edition" width="370" height="294">
-                        <h3>Издание <span lang="en">Limited Edition</span></h3>
-                        <p>Дизайн</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/project-lab.jpg" alt="Пример работы проект LAB" width="370" height="294">
-                        <h3>Проект <span lang="en">LAB</span></h3>
-                        <p>Маркетинг</p>
-                    </li>
-                    <li>
-                        <img src="./images/portfolio/growing-business.jpg" alt="Пример работы Growing Business" width="370" height="294">
-                        <h3 lang="en">Growing Business</h3>
-                        <p>Приложение</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-
-        <!-- Подвал сайта -->
-    <footer>
-        <a href=""><span>Web</span>Studio</a>
-        <address>
-            г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scc/styles.css" />
+    <title>Студия</title>
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <nav class="nav">
+        <a class="logo link-no-decor" href="./index.html"><span class="aсcent">Web</span>Studio</a>
+        <ul class="list list-no-marker">
+          <li class="item">
+            <a class="link link-no-decor" href="./index.html">Студия</a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">Контакты</a>
+          </li>
         </ul>
+      </nav>
+      <ul class="contact-list list-no-marker">
+        <li class="item">
+          <a class="link link-no-decor" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="item">
+          <a class="link link-no-decor" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+    <!-- Основной контент Портфолио -->
+    <main>
+      <!-- Примеры работ -->
+      <section class="examples">
+        <h2 class="title" hidden>Портфолио</h2>
+
+        <!-- Фильтр примеров работ -->
+        <ul class="list-filter list-no-marker">
+          <li class="item">
+            <button class="button" type="button">Все</button>
+          </li>
+          <li class="item">
+            <button class="button" type="button">Веб-сайты</button>
+          </li>
+          <li class="item">
+            <button class="button" type="button">Приложения</button>
+          </li>
+          <li class="item">
+            <button class="button" type="button">Дизайн</button>
+          </li>
+          <li class="item">
+            <button class="button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <!-- Список примеров работ -->
+        <ul class="list list-no-marker">
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/tehnokryak.jpg"
+                alt="Пример работы Технокряк"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Технокряк</h3>
+              <p class="descriptions">Веб-сайт</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/new-orlean.jpg"
+                alt="Пример работы постер New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+              <p class="descriptions">Дизайн</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/seafood.jpg"
+                alt="Пример работы ресторан Seafood"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Ресторан <span lang="en">Seafood</span></h3>
+              <p class="descriptions">Приложение</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/project-prime.jpg"
+                alt="Пример работы проект Prime"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Проект <span lang="en">Prime</span></h3>
+              <p class="descriptions">Маркетинг</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/project-boxes.jpg"
+                alt="Пример работы проект Boxes"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Проект <span lang="en">Boxes</span></h3>
+              <p class="descriptions">Приложение</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/inspiration-no-borders.jpg"
+                alt="Пример работы Inspiration has no Borders"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle" lang="en">Inspiration has no Borders</h3>
+              <p class="descriptions">Веб-сайт</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/limited-edition.jpg"
+                alt="Пример работы издание Limited Edition"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Издание <span lang="en">Limited Edition</span></h3>
+              <p class="descriptions">Дизайн</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/project-lab.jpg"
+                alt="Пример работы проект LAB"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle">Проект <span lang="en">LAB</span></h3>
+              <p class="descriptions">Маркетинг</p>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link link-no-decor" href="">
+              <img
+                src="./images/portfolio/growing-business.jpg"
+                alt="Пример работы Growing Business"
+                width="370"
+                height="294"
+              />
+              <h3 class="subtitle" lang="en">Growing Business</h3>
+              <p class="descriptions">Приложение</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+      <a class="logo link-no-decor" href=""
+        ><span class="aсcent">Web</span><span class="logo-second-color">Studio</span></a
+      >
+      <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+      <ul class="list list-no-marker">
+        <li><a class="link link-no-decor" href="mailto:info@example.com">info@example.com</a></li>
+        <li><a class="link link-no-decor" href="tel:+380991111111">+38 099 111 11 11</a></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
