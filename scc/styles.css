@@ -412,7 +412,6 @@ img {
 
 .examples .descriptions {
   color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
 
   font-weight: 400;
   font-size: 16px;
@@ -421,7 +420,7 @@ img {
 }
 
 .wrapper-descr {
-  /* background-color: var(--main-bg-color); */
+  background-color: var(--main-bg-color);
   border-right: 1px solid var(--line-wrapper-color);
   border-bottom: 1px solid var(--line-wrapper-color);
   border-left: 1px solid var(--line-wrapper-color);
