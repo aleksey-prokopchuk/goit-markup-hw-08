@@ -28,9 +28,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Сбрасываем верхние margin */
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+ul,
+p {
+  margin-bottom: 0px;
+} */
+
 /* Список без маркеров */
 .list-no-marker {
   list-style: none;
+  padding-left: 0px;
 }
 
 /* Ссылки без подчеркивания */
@@ -39,6 +60,8 @@ body {
 }
 /* Шапка сайта */
 .logo {
+  margin-right: 93px;
+
   color: var(--secondary-txt-color);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -53,6 +76,47 @@ body {
 
 /* index.html */
 /* Главная навигация */
+.container {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .list {
+  display: flex;
+  align-items: center;
+}
+
+.nav .list .item {
+  margin-right: 50px;
+}
+
+.nav .list .item:last-child {
+  margin-right: 0px;
+}
+
+.header .contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-list .item {
+  margin-right: 50px;
+}
+
+.contact-list .item:last-child {
+  margin-right: 0px;
+}
 
 .header .link {
   color: var(--title-color);
