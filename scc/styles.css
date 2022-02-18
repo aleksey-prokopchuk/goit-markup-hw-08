@@ -17,6 +17,7 @@
   --aсcent-color-hover: #188ce8;
   /* Цвет линии хедера */
   --line-header-color: #ececec;
+  --line-wrapper-color: #eeeeee;
 }
 
 body {
@@ -179,6 +180,8 @@ p {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -251,7 +254,9 @@ p {
 }
 
 /* Секция Наша команда */
-
+img {
+  display: block;
+}
 .team .title {
   color: var(--title-color);
 
@@ -295,8 +300,10 @@ p {
 }
 
 .item-decriptions {
+  background-color: var(--main-bg-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .item:last-child {
@@ -329,8 +336,15 @@ p {
 }
 
 /* portfolio.html */
+/* Фильтр */
+.examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list-filter {
   display: flex;
+  justify-content: center;
 }
 
 .list-filter .button {
@@ -339,7 +353,11 @@ p {
 
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .examples .button:hover,
@@ -356,6 +374,11 @@ p {
   margin-right: 0px;
 }
 
+.list-filter {
+  margin-bottom: 50px;
+}
+
+/* Примеры работ */
 .examples .examples-list {
   display: flex;
   flex-wrap: wrap;
@@ -363,12 +386,15 @@ p {
 
 .examples-list .item {
   margin-right: 30px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
-.examples-list .item:last-child {
+.examples-list .item:nth-child(3n + 3) {
   margin-right: 0px;
-  /* margin-bottom: 0px; */
+}
+
+.examples-list .item:nth-child(n + 7) {
+  margin-bottom: 0px;
 }
 
 .examples .subtitle {
@@ -380,6 +406,10 @@ p {
   letter-spacing: 0.06em;
 }
 
+.examples-list .subtitle {
+  margin-bottom: 4px;
+}
+
 .examples .descriptions {
   color: var(--main-txt-color);
 
@@ -387,6 +417,15 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.wrapper-descr {
+  /* background-color: var(--main-bg-color); */
+  border-right: 1px solid var(--line-wrapper-color);
+  border-bottom: 1px solid var(--line-wrapper-color);
+  border-left: 1px solid var(--line-wrapper-color);
+
+  padding: 20px 24px;
 }
 
 /* Footer */
