@@ -87,11 +87,14 @@ p {
 
 /* index.html */
 /* Главная навигация */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .header .container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header .nav {
@@ -155,11 +158,13 @@ p {
 /* Секция Герой */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--hero-bg-color);
 }
 
 .hero-title {
   color: var(--main-bg-color);
-  background-color: var(--hero-bg-color);
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -194,7 +199,7 @@ p {
   display: flex;
 } */
 
-.feature .container {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -316,7 +321,7 @@ img {
 
 /* Footer */
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
