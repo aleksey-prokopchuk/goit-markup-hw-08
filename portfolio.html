@@ -39,10 +39,20 @@
         </nav>
         <ul class="contact-list list-no-marker">
           <li class="item">
-            <a class="link link-no-decor" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link link-no-decor" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="10px" height="16px">
+                <use href="./images/svg/sprite.svg#icon-smartphone"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="item">
-            <a class="link link-no-decor" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link link-no-decor" href="tel:+380961111111">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/svg/sprite.svg#icon-envelope"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -56,26 +66,23 @@
           <h2 class="title" hidden>Портфолио</h2>
 
           <!-- Фильтр примеров работ -->
-          <div>
-            <ul class="list-filter list-no-marker">
-              <li class="item">
-                <button class="button" type="button">Все</button>
-              </li>
-              <li class="item">
-                <button class="button" type="button">Веб-сайты</button>
-              </li>
-              <li class="item">
-                <button class="button" type="button">Приложения</button>
-              </li>
-              <li class="item">
-                <button class="button" type="button">Дизайн</button>
-              </li>
-              <li class="item">
-                <button class="button" type="button">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
-
+          <ul class="list-filter list-no-marker">
+            <li class="item">
+              <button class="button" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
           <!-- Список примеров работ -->
           <ul class="examples-list list-no-marker">
             <li class="item">
@@ -101,7 +108,7 @@
                   height="294"
                 />
                 <div class="wrapper-descr">
-                  <h3 class="subtitle">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                  <h3 class="subtitle">Постер New Orlean vs Golden Star</h3>
                   <p class="descriptions">Дизайн</p>
                 </div>
               </a>
@@ -211,18 +218,53 @@
     <!-- Подвал сайта -->
     <footer class="footer">
       <div class="container">
-        <a class="logo link-no-decor" href=""
-          ><span class="aсcent">Web</span><span class="logo-second-color">Studio</span></a
-        >
-        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-        <ul class="list list-no-marker">
-          <li class="item">
-            <a class="link link-no-decor" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="item">
-            <a class="link link-no-decor" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
+        <div class="wrapper-contact">
+          <a class="logo link-no-decor" href=""
+            ><span class="aсcent">Web</span><span class="logo-second-color">Studio</span></a
+          >
+          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="list list-no-marker">
+            <li class="item">
+              <a class="link link-no-decor" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="item">
+              <a class="link link-no-decor" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper-social">
+          <p class="social-title">присоединяйтесь</p>
+          <ul class="socials-list list-no-marker">
+            <li class="socials-item">
+              <a class="socials-link socials-link .link-no-decor" href="" aria-label="Instagram">
+                <svg class="socials-icon-footer">
+                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link socials-link" href="" aria-label="Twitter">
+                <svg class="socials-icon-footer">
+                  <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link socials-link" href="" aria-label="Facebook">
+                <svg class="socials-icon-footer">
+                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link socials-link" href="" aria-label="Linkedin">
+                <svg class="socials-icon-footer">
+                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
