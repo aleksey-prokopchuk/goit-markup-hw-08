@@ -370,7 +370,6 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  /* outline: 1px solid tomato; */
   background-color: var(--main-bg-color);
   border-radius: 50%;
 }
@@ -381,14 +380,16 @@ img {
   fill: var(--icon-color);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--aсcent-color);
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--aсcent-color);
+  /* border: 1px solid var(--aсcent-color); */
 }
 
-/* .tiam .socials-item:not(:last-child) {
-  margin-right: 10px;
-} */
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--main-bg-color);
+}
 
 /* Секция Постоянные клиенты */
 
@@ -426,7 +427,7 @@ img {
   border-radius: 4px;
 }
 
-.clients-icon {
+.container .clients-icon {
   width: 106px;
   height: 60px;
   fill: var(--icon-color);
@@ -438,12 +439,13 @@ img {
 }
 
 .clients-link:hover .clients-icon,
-.clients-icon:focus {
+.clients-link:focus .clients-icon {
   fill: var(--aсcent-color);
 }
 
 /* _________________________________________________________________________ */
 /* portfolio.html */
+
 /* Фильтр */
 .examples {
   padding-top: 94px;
