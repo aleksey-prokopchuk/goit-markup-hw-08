@@ -1,0 +1,10 @@
+/* Шапка сайта */
+.header {
+  padding: 24px 0 25px 0;
+  border-bottom: 1px solid var(--line-header-color);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}

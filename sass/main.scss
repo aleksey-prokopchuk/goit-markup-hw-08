@@ -1,0 +1,28 @@
+//variablel
+@import './variables/variables';
+
+//utils
+@import './utils/visually-hidden';
+
+// base styles
+@import './base/base';
+
+//componets
+@import './components/button';
+@import './components/conteiner';
+@import './components/logo';
+@import './components/header';
+@import './components/nav';
+@import './components/contact';
+@import './components/hero';
+@import './components/feature';
+@import './components/about';
+@import './components/team';
+@import './components/socials-list';
+@import './components/clients';
+@import './components/form';
+@import './components/examples/section';
+@import './components/footer';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form-submit';

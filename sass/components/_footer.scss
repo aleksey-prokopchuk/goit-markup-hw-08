@@ -1,0 +1,64 @@
+/* Подвал сайта */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bg-color);
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__wrapper {
+    margin-right: 70px;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0px;
+
+    text-decoration: none;
+
+    color: var(--main-bg-color);
+  }
+
+  &__address {
+    margin-bottom: 9px;
+
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+
+    color: var(--main-bg-color);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__wrapper-socials {
+    margin-right: 93px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+
+    margin-bottom: 20px;
+  }
+}
