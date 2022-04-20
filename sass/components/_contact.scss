@@ -1,10 +1,17 @@
 /* Контакты хедер */
 
 .contact {
-  display: none;
-  // display: flex;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 
   &__item {
     font-weight: 500;

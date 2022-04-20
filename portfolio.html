@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <!-- Меню контактов -->
+        <!-- Список контактов -->
         <ul class="list-no-marker contact">
           <li class="contact__item">
             <a class="link-no-decor contact__link" href="mailto:info@devstudio.com">
@@ -59,6 +59,19 @@
             >
           </li>
         </ul>
+        <!-- Кнопка мобильноого меню -->
+        <button
+          class="mobile-btn"
+          type="button"
+          aria-label="Кнопка мобильного меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="mobile-btn__icon" width="40" height="40">
+            <use class="mobile-btn__open" href="./images/svg/sprite.svg#icon-menu-open"></use>
+            <use class="mobile-btn__close" href="./images/svg/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -372,5 +385,87 @@
         </form>
       </div>
     </footer>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__wrapper-nav">
+        <nav class="mobile-nav">
+          <ul class="list-no-marker mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="link-no-decor mobile-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                class="link-no-decor mobile-nav__link mobile-nav__link--curent"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link-no-decor mobile-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-menu__wrapper-bottom">
+        <ul class="list-no-marker mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="link-no-decor mobile-menu__link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="link-no-decor mobile-menu__link mobile-menu__link--grey"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list-no-marker mobile-cocials-list">
+          <li class="mobile-cocials-list__item">
+            <a
+              class="link-no-decor mobile-cocials-list__link"
+              href=""
+              target="_blank"
+              noopener
+              noreferrer
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-cocials-list__item">
+            <a
+              class="link-no-decor mobile-cocials-list__link"
+              href=""
+              target="_blank"
+              noopener
+              noreferrer
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-cocials-list__item">
+            <a
+              class="link-no-decor mobile-cocials-list__link"
+              href=""
+              target="_blank"
+              noopener
+              noreferrer
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-cocials-list__item">
+            <a
+              class="link-no-decor mobile-cocials-list__link"
+              href=""
+              target="_blank"
+              noopener
+              noreferrer
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Подключаю скрипт мобильной кнопки -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
