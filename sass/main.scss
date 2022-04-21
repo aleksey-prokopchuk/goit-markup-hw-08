@@ -8,12 +8,14 @@
 @import './base/base';
 
 //componets
+
 @import './components/button';
 @import './components/mobile-btn';
 
 @import './components/conteiner';
 @import './components/logo';
 @import './components/header';
+@import './components/mobile-menu/element';
 @import './components/nav';
 @import './components/contact';
 @import './components/hero';
@@ -28,4 +30,3 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form-submit';
-@import './components/mobile-menu/element';

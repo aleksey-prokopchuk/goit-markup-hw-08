@@ -1,5 +1,6 @@
 .mobile-cocials-list {
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
     &:not(:last-child) {
