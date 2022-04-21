@@ -8,6 +8,12 @@
 
   &__container {
     display: flex;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+
+      text-align: center;
+    }
+
     align-items: baseline;
   }
 
