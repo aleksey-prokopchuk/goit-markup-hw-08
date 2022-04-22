@@ -3,13 +3,23 @@
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: -30px;
-  margin-bottom: -30px;
+  // flex-basis: calc(100% / 2 - 30px);
+  @media screen and(max-width:767.5px) {
+    & {
+      margin-top: 40px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    margin-right: -30px;
+    margin-bottom: -30px;
 
-  &__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    &__item {
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &__link {
@@ -62,6 +72,9 @@
     letter-spacing: 0.05em;
 
     color: var(--title-color);
+    @media screen and(min-width:768px) and (max-width: 1199.5px) {
+      letter-spacing: 0;
+    }
   }
 
   &__descriptions {

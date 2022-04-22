@@ -21,7 +21,6 @@
   }
 
   &__input-mail {
-    width: 358px;
     margin-right: 12px;
     padding: 15px 16px;
 
@@ -37,6 +36,13 @@
     color: rgba(255, 255, 255, 0.6);
 
     overflow: hidden;
+    @media screen and(max-width:1199.5px) {
+      width: 450px;
+    }
+
+    @media screen and(min-width:1200px) {
+      width: 358px;
+    }
 
     &::placeholder {
       font-weight: 400;
@@ -52,7 +58,7 @@
     align-items: center;
     &::after {
       content: '';
-      display: flex;
+      // display: flex;
       width: 24px;
       height: 24px;
       background-image: url(../images/svg/subscribe.svg);

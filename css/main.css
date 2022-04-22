@@ -62,6 +62,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -161,6 +163,12 @@ body {
   margin-right: auto;
   margin-left: auto;
   outline: 1px solid tomato;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -449,9 +457,40 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--hero-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_sm.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_sm@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_md.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_md@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_lg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_lg@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -856,74 +895,30 @@ body {
   fill: var(--aсcent-color);
 }
 
-/* Подписка на рассылку */
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__lable {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-bg-color);
-}
-
-.form__wrapper {
-  display: flex;
-}
-
-.form__input-mail {
-  width: 358px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
-}
-
-.form__input-mail::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form__button-icon {
-  display: flex;
-  align-items: center;
-}
-
-.form__button-icon::after {
-  content: '';
-  display: flex;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/svg/subscribe.svg);
-  margin-left: 10px;
-}
-
-/* Портфолио */
-.examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .list-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767.5px) {
+  .list-filter {
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-bottom: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .list-filter__item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 }
 
 .list-filter__item:not(:last-child) {
@@ -951,18 +946,43 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Портфолио */
+.examples {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Примеры работ */
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
-.cards-list__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 767.5px) {
+  .cards-list {
+    margin-top: 40px;
+  }
+  .cards-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards-list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .cards-list__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .cards-list__link {
@@ -1009,6 +1029,12 @@ body {
   color: var(--title-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .cards-list__subtitle {
+    letter-spacing: 0;
+  }
+}
+
 .cards-list__descriptions {
   color: var(--main-txt-color);
   font-weight: 400;
@@ -1044,8 +1070,34 @@ body {
   }
 }
 
-.footer__wrapper {
-  margin-right: 70px;
+.footer__first-line {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__first-line {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer__first-line {
+    gap: 165px;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .footer__first-line {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    margin-right: 70px;
+  }
 }
 
 .footer__link {
@@ -1076,8 +1128,10 @@ body {
   margin-bottom: 9px;
 }
 
-.footer__wrapper-socials {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .footer__wrapper-socials {
+    margin-right: 93px;
+  }
 }
 
 .footer__title {
@@ -1088,6 +1142,74 @@ body {
   text-transform: uppercase;
   color: var(--main-bg-color);
   margin-bottom: 20px;
+}
+
+/* Подписка на рассылку */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__lable {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.form__wrapper {
+  display: flex;
+}
+
+.form__input-mail {
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1199.5px) {
+  .form__input-mail {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__input-mail {
+    width: 358px;
+  }
+}
+
+.form__input-mail::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form__button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.form__button-icon::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/svg/subscribe.svg);
+  margin-left: 10px;
 }
 
 /* Тень модального окна */

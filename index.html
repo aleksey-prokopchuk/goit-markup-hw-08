@@ -74,15 +74,15 @@
     <!-- Основной контент сайта -->
     <main class="main">
       <!-- Секция Герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
           <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Особенности -->
-      <!-- <section class="feature">
+      <section class="feature">
         <div class="container">
           <h2 class="title" hidden>Особенности</h2>
           <ul class="list-no-marker feature__list">
@@ -112,66 +112,116 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Чем мы занимаемся -->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list-no-marker about__list">
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/programming.jpg"
-                  alt="Написание програмного кода"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/programming_lg.jpg    1x,
+                      ./images/about/programming_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about__img"
+                    src="./images/about/programming_lg.jpg"
+                    alt="Написание програмного кода"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="about__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/application.jpg"
-                  alt="Разработка мобильного приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/application_lg.jpg    1x,
+                      ./images/about/application_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about__img"
+                    src="./images/about/application_lg.jpg"
+                    alt="Разработка мобильного приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="about__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/gadget.jpg"
-                  alt="Держит в руке планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/about/gadget_lg.jpg 1x, ./images/about/gadget_lg@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about__img"
+                    src="./images/about/gadget_lg.jpg"
+                    alt="Держит в руке планшет"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="about__description">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Наша команда -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list-no-marker team__list">
             <li class="team__item">
-              <img
-                class="tiam-img"
-                src="./images/product_designer.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/product_designer_sm.jpg    1x,
+                    ./images/team/product_designer_sm@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/product_designer_md.jpg    1x,
+                    ./images/team/product_designer_md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/product_designer_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="tiam-img"
+                  src="./images/team/product_designer_lg.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__description" lang="en">Product Designer</p>
@@ -208,13 +258,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="tiam-img"
-                src="./images/frontend_developer.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/frontend_developer_sm.jpg    1x,
+                    ./images/team/frontend_developer_sm@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontend_developer_md.jpg    1x,
+                    ./images/team/frontend_developer_md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/frontend_developer_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="tiam-img"
+                  src="./images/team/frontend_developer_lg.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__description" lang="en">Frontend Developer</p>
@@ -251,13 +324,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="tiam-img"
-                src="./images/marketing.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/marketing_sm.jpg 1x, ./images/team/marketing_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/marketing_md.jpg 1x, ./images/team/marketing_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/marketing_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="tiam-img"
+                  src="./images/team/marketing_lg.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__description" lang="en">Marketing</p>
@@ -294,13 +384,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="tiam-img"
-                src="./images/ui_designer.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teamui_designer_sm.jpg     1x,
+                    ./images/team/ui_designer_sm@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui_designer_md.jpg    1x,
+                    ./images/team/ui_designer_md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/team/ui_designer_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="tiam-img"
+                  src="./images/team/ui_designer_lg.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__description" lang="en">UI Designer</p>
@@ -338,10 +451,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секция Постоянные клиенты -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <div class="clients__wrapper">
@@ -391,78 +504,81 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
       <div class="container footer__container">
-        <!-- Левая часть футера -->
-        <div class="footer__wrapper">
-          <a class="logo footer__logo" href="./index.html"
-            ><span class="logo__aсcent">Web</span>Studio</a
-          >
-          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="list-no-marker footer__list">
-            <li class="footer__item">
-              <a class="link-no-decor footer__link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="link-no-decor footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
+        <div class="footer__first-line">
+          <!-- Левая часть футера -->
+          <div class="footer__wrapper">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__aсcent">Web</span>Studio</a
+            >
+            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="list-no-marker footer__list">
+              <li class="footer__item">
+                <a class="link-no-decor footer__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="link-no-decor footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Центр футера (соцсети) -->
+          <div class="footer__wrapper-socials">
+            <p class="footer__title">присоединяйтесь</p>
+            <ul class="list-no-marker socials-list">
+              <li class="socials-list__item">
+                <a
+                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                  href=""
+                  aria-label="Instagram"
+                >
+                  <svg class="socials-list__icon socials-list__icon--darck-bg">
+                    <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a
+                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                  href=""
+                  aria-label="Twitter"
+                >
+                  <svg class="socials-list__icon socials-list__icon--darck-bg">
+                    <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a
+                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                  href=""
+                  aria-label="Facebook"
+                >
+                  <svg class="socials-list__icon socials-list__icon--darck-bg">
+                    <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-list__item">
+                <a
+                  class="link-no-decor socials-list__link socials-list__link--darck-bg"
+                  href=""
+                  aria-label="Linkedin"
+                >
+                  <svg class="socials-list__icon socials-list__icon--darck-bg">
+                    <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Центр футера (соцсети) -->
-        <div class="footer__wrapper-socials">
-          <p class="footer__title">присоединяйтесь</p>
-          <ul class="list-no-marker socials-list">
-            <li class="socials-list__item">
-              <a
-                class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                href=""
-                aria-label="Instagram"
-              >
-                <svg class="socials-list__icon socials-list__icon--darck-bg">
-                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a
-                class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                href=""
-                aria-label="Twitter"
-              >
-                <svg class="socials-list__icon socials-list__icon--darck-bg">
-                  <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a
-                class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                href=""
-                aria-label="Facebook"
-              >
-                <svg class="socials-list__icon socials-list__icon--darck-bg">
-                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-list__item">
-              <a
-                class="link-no-decor socials-list__link socials-list__link--darck-bg"
-                href=""
-                aria-label="Linkedin"
-              >
-                <svg class="socials-list__icon socials-list__icon--darck-bg">
-                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <!-- Правая часть футера (форма) -->
         <form class="form" name="subscribe">
           <label class="form__lable" for="email"> Подпишитесь на рассылку</label>
