@@ -10,11 +10,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
   }
-
-  // flex-basis: calc(100% / 2 - 30px);
 
   &__item {
     @media screen and(max-width:767.5px) {
@@ -23,14 +20,10 @@
       }
     }
     @media screen and(min-width:768px) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-    @media screen and(min-width:768px) and(max-width:1199.5px) {
-      width: calc(100% / 2 - 30px);
+      width: 354px;
     }
     @media screen and(min-width:1200px) {
-      width: calc(100% / 3 - 30px);
+      width: 370px;
     }
   }
 

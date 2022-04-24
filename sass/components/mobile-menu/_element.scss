@@ -1,12 +1,16 @@
 @import '../mobile-menu/mobile-nav';
 @import '../mobile-menu/mobile-cocials-list';
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -32,11 +36,16 @@
 
   &__link {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 25px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     color: var(--aсcent-color);
+
+    @media screen and (min-width: 393px) {
+      font-size: 34px;
+    }
+
     &--grey {
       font-size: 24px;
       line-height: 1.16;

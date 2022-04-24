@@ -1,93 +1,51 @@
-/* Секция Постоянные клиенты */
-
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  text-align: center;
+  @media screen and(min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  &__wrapper {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 768px) {
-      width: 738px;
-    }
-  }
-
   &__list {
     display: flex;
-
-    // max-width: 450px;
-    @media screen and (max-width: 1199.5px) {
-      flex-wrap: wrap;
-      // justify-content: center;
-
-      // align-items: center;
-
-      // margin-left: auto;
-      // margin-right: auto;
-
-      margin-right: -30px;
-      margin-bottom: -30px;
-    }
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  &__item {
-    @media screen and (max-width: 1199.5px) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 210px;
     height: 92px;
+
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: var(--aсcent-color);
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+      fill: var(--aсcent-color);
+    }
 
     @media screen and (min-width: 768px) {
       width: 226px;
     }
-
     @media screen and (min-width: 1200px) {
       width: 170px;
-    }
-    &:hover,
-    &:focus {
-      border: 1px solid var(--aсcent-color);
     }
   }
 
   &__icon {
-    width: 106px;
-    height: 60px;
     fill: var(--icon-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__link:hover &__icon,
-  &__link:focus &__icon {
-    fill: var(--aсcent-color);
   }
 }
