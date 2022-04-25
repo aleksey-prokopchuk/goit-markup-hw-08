@@ -536,7 +536,7 @@ body {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -576,6 +576,12 @@ body {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767.5px) {
+  .feature__subtitle {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767.5px) {
